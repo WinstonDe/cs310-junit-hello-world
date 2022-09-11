@@ -1,5 +1,9 @@
 package edu.jsu.mcis.cs310;
 
+/*
+Deuntae Winston
+*/
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,8 +20,11 @@ public class Main {
         return "Hello, World!";
     }
     
-    public String reverse(String message) {
-        return message;
+    public String reverse(String Greet) {
+        StringBuilder s = new StringBuilder();
+        s.append(Greet); 
+        s.reverse();
+        return s.toString();
     }
     
 }

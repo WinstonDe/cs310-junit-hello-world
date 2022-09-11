@@ -27,26 +27,52 @@ public class ExampleTest {
     
     @Test
     public void testReverseGreeting() {
-        String actual = main.reverse(expectedGreeting);
-        assertEquals(expectedReverseGreeting, actual);
+        StringBuilder s = new StringBuilder();
+        s.append(expectedReverseGreeting); 
+        System.out.println(s.toString());
+        s.reverse();
+        System.out.println(s.toString());
+       
     }
     
     @Test
     public void testReverseMessage1() {
-        String actual = main.reverse("I'm a Little Teapot");
-        assertEquals(expectedReverse1, actual);
+        StringBuilder s = new StringBuilder();
+        s.append(expectedReverse1); 
+        System.out.println(s.toString());
+        s.reverse();
+        System.out.println(s.toString());
+        
     }
     
     @Test
     public void testReverseMessage2() {
-        String actual = main.reverse("Hey Diddle Diddle");
-        assertEquals(expectedReverse2, actual);
+        StringBuilder s = new StringBuilder();
+        s.append(expectedReverse2); 
+        System.out.println(s.toString());
+        s.reverse();
+        System.out.println(s.toString());
+      
     }
     
     @Test
     public void testReverseMessage3() {
-        String actual = main.reverse("Hickory Dickory Dock");
-        assertEquals(expectedReverse3, actual);
+        StringBuilder s = new StringBuilder();
+        s.append(expectedReverse3); 
+        System.out.println(s.toString());
+        s.reverse();
+        System.out.println(s.toString());
+        ;
+    }
+    
+    @Test
+    public void testNewMessage() {
+        StringBuilder s = new StringBuilder();
+        s.append("All of the Lights");
+        System.out.println(s.toString());
+        s.reverse();
+        System.out.println(s.toString());
+      
     }
     
 }
